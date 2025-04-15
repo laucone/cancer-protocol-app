@@ -31,24 +31,25 @@ repurposed = st.radio("15. Are you open to using repurposed medications?", ["Yes
 if st.button("Get My Protocol Recommendation"):
     if turbo == "Yes":
         st.subheader("🔥 Recommended Protocol: FLCCC + Gaertner Turbo Cancer Combo")
-        st.write("- Ivermectin, NAC, Statins, High-dose Curcumin")
+        st.write("- Ivermectin, Mebendazole, NAC, Statins, High-dose Curcumin")
         st.write("- Avoid inflammation, focus on mitochondrial repair")
     elif brain == "Yes":
         st.subheader("🧠 Recommended Protocol: FloridaSharkman GBM Protocol")
-        st.write("- Doxycycline, Moxidectin, Fenbendazole, Berberine, Azithromycin")
+        st.write("- Ivermectin, Mebendazole, Doxycycline, Moxidectin, Fenbendazole, Berberine, Azithromycin")
     elif "Chemotherapy" in treatment or "Radiation" in treatment:
         st.subheader("💊 Recommended Protocol: FLCCC Tier 1–3 + Gaertner Combo")
-        st.write("- Propranolol, Metformin, Ivermectin, Curcumin, Green Tea Extract")
+        st.write("- Ivermectin, Mebendazole, Propranolol, Metformin, Curcumin, Green Tea Extract")
         st.write("- Add Fenbendazole and Vit C if viral or aggressive tumor")
     elif stage in ["III", "IV"]:
         st.subheader("⚙️ Recommended Protocol: Aggressive Multi-Layer Protocol")
-        st.write("- FLCCC Tier 2–3 + FloridaSharkman B + Gaertner full 4-agent strategy")
+        st.write("- Ivermectin, Mebendazole, FLCCC Tier 2–3 + FloridaSharkman B + Gaertner full 4-agent strategy")
     elif "HPV" in viruses or "EBV" in viruses:
         st.subheader("🦠 Recommended Protocol: Antiviral-Based (FloridaSharkman A/B)")
-        st.write("- Ivermectin, Doxycycline, Berberine, Fenbendazole")
+        st.write("- Ivermectin, Mebendazole, Doxycycline, Berberine, Fenbendazole")
     else:
         st.subheader("🌿 Recommended Protocol: FLCCC Tier 0 + Lifestyle")
         st.write("- Vitamin D, Melatonin, Curcumin, EGCG, Ketogenic Diet, Fasting")
         st.write("- Add Metformin and Berberine if insulin resistance")
+
 
 
